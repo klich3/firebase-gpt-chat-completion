@@ -1,0 +1,27 @@
+{
+	"name": "gpt-chat-completion",
+	"description": "GPT Chat Completion Cloud Functions for Firebase",
+	"version": "0.1.0",
+	"author": "Anthony Sychev <anton@sychev.xyz> (https://sychev.xyz)",
+	"scripts": {
+		"lint": "eslint .",
+		"serve": "firebase emulators:start --only functions",
+		"shell": "firebase functions:shell",
+		"start": "npm run shell",
+		"deploy": "firebase deploy --only functions:gpt-chat-completion",
+		"logs": "firebase functions:log"
+	},
+	"engines": {
+		"node": "16"
+	},
+	"main": "index.js",
+	"dependencies": {
+		"firebase-admin": "^11.8.0",
+		"firebase-functions": "^4.4.0",
+		"openai": "^3.2.1"
+	},
+	"devDependencies": {
+		"eslint": "^8.40.0"
+	},
+	"private": true
+}
